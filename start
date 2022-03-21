@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Starting Minecraft"
+java -Xmx4080M -Xms2048M -jar server.jar nogui > /var/www/pinky.uk.to/mineout.txt

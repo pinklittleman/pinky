@@ -1,0 +1,7 @@
+rm /var/www/pinky.sly.io/mcstatus
+File=/var/www/pinky.sly.io/mineout.txt
+if grep -q Done  "$File"; ##note the space after the string you are searching for 
+then echo "Hooray!!It's available" > /var/www/pinky.sly.io/mcstatus
+else echo "Oops!!Not available" > /var/www/pinky.sly.io/mcstatus
+sleep 5
+fi
